@@ -69,7 +69,7 @@ document.writeln('El total a pagar es: ' + total + '<br>'); */
 /* 6.	Calcule el porcentaje de alumnos y alumnas de un salón de clase, 
 digitando el total de alumnos hombres y mujeres. */
 
-var th = prompt('Ingrese el total de hombres');
+/* var th = prompt('Ingrese el total de hombres');
 var tm = prompt('Ingrese el total de mujeres');
 
 var sm = parseInt(th) + parseInt(tm);
@@ -78,11 +78,36 @@ var ph = (th/sm)*100;
 var pm = (tm/sm)*100;
 
 document.writeln('EL porcentaje total de hombres es ' + ph + '<br>');
-document.writeln('EL porcentaje total de mujeres es ' + pm + '<br>');
+document.writeln('EL porcentaje total de mujeres es ' + pm + '<br>'); */
 
 
+/* 7.	Calcule el promedio de 5 notas de un alumno, el rango de cada nota es del 1 al 5. */
 
+/* var n1 = prompt('Digite n1');
+var n2 = prompt('Digite n2');
+var n3 = prompt('Digite n3');
+var n4 = prompt('Digite n4');
+var n5 = prompt('Digite n5');
 
+var sm = (parseInt(n1) + parseInt(n2) + parseInt(n3) + parseInt(n4) + parseInt(n5) )/5;
+
+document.writeln('EL promedio del estudiante es ' + sm + '<br>');
+ */
+
+/* 8.	Pide al usuario un número y determina si es par o impar y si es positivo o negativo.
+ */
+/* 
+var n = prompt('Digite un número');
+ if((n%2==0)&&(n>=0)){
+    document.writeln('El número es par ' + n + ' y positivo <br>');
+ }else if((n%2==0)&&(n<0)){
+    document.writeln('El número es par ' + n + ' y negativo <br>');
+ }else if ((n%2!=0)&&(n>=0)){
+    document.writeln('El número es impar ' + n + ' y positivo <br>');
+ }else {
+    document.writeln('El número es impar ' + n + ' y negativo <br>');
+ } 
+ */
 
 /* var edad = prompt('Ingrese la edad: ')
 switch(true){
