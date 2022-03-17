@@ -109,20 +109,87 @@ var n = prompt('Digite un número');
  } 
  */
 
-/* var edad = prompt('Ingrese la edad: ')
-switch(true){
-    case edad < 18 : alert('Usted es menor');
-    break;
-    default: alert('Adulto mayor');
-    break;
-} */
+/*  9.	Pide al usuario dos números y determina cual es el número mayor y cual es el menor. */
 
-/* var  dia = prompt('Ingrese un numero: ');
+/* var n1 = prompt('Digite un número 1');
+var n2 = prompt('Digite un número 2');
+if(n1>n2){
+    document.writeln('El número mayor es: ' + n1 + ' con respecto a ' + n2 + '<br>');
+}else if(n2>n1){
+    document.writeln('El número mayor es: ' + n2 + ' con respecto a ' + n1 + '<br>');
+}else{
+    document.writeln('Los números son iguales ' + n2 + '<br>');
+}
+ */
+
+/* 10.	Pide al usuario que digite un numero del 1 al 7 y Realiza el código correspondiente 
+para saber cuál es el dia de la semana correspondiente al número digitado
+ */
+
+/* var  dia = prompt('Ingrese un numero del 1 al 7: ');
 switch( parseInt (dia)){
     case 1: alert('lunes');
     break;
     case 2: alert('Martes');
+    break;
+    case 3: alert('Miercoles');
+    break;
+    case 4: alert('Jueves');
+    break;
+    case 5: alert('Viernes');
+    break;
+    case 6: alert('Sabado');
+    break;
+    case 7: alert('Domingo');
+    break;
     default: alert('EL numero ingresado no existe');
+    break;
+} */
+
+/* 11.	Se necesita clasificar la etapa de una persona solo pidiéndole como dato su edad. 
+(Si la edad es menor de 18 es adolente), 
+(si la edad está en el rango de 18 a 28 es adulto adolecente), 
+(si la edad está entre 29 a 49 es adulto),
+ (si la edad está entre 50 en adelante es adulto mayor). 
+Mostrar en pantalla la etapa de la persona. */
+
+/* var edad = prompt('Ingrese la edad: ')
+switch(true){
+    case edad < 18 : alert('Usted es adolecente');
+    break;
+    case edad >= 18 && edad <= 28: alert('Usted es adulto adolecente');
+    break;
+    case edad > 28 && edad <= 49: alert('Usted es adulto');
+    break
+    default: alert('Adulto mayor');
     break;
 
 } */
+
+/* 12.	 Realice una factura de venta, ingrese el valor de 3 productos y calcule lo siguiente:
+si paga en efectivo paga el valor total.
+si paga con cupón realice un 3% de descuento
+si paga a crédito aumente el 5% al total. */
+
+/* var prd1 = prompt('Ingrese el valor del producto 1: $ ');
+var prd2 = prompt('Ingrese el valor del producto 2: $ ');
+var prd3 = prompt('Ingrese el valor del producto 3: $ ');
+var mtdp = prompt('Ingrese el su metodo de pago:  1. Efectivo, 2. Cupón, 3. Crédito:  ');
+var ttl,desc;
+if(mtdp == 1){
+  ttl = parseInt(prd1) + parseInt(prd2) + parseInt(prd3);
+  alert('El valor a pagar por su factura es: ' + ttl);
+}else if (mtdp == 2){
+    ttl = parseInt(prd1) + parseInt(prd2) + parseInt(prd3);
+    desc = ttl * 0.3;
+    ttl = ttl - desc;
+    alert('El valor a pagar por su factura es: $' + ttl + ' y tiene un descuento de $' + desc);
+}else if(mtdp == 3){
+    ttl = parseInt(prd1) + parseInt(prd2) + parseInt(prd3);
+    desc = ttl * 0.5;
+    ttl = ttl + desc;
+    alert('El valor a pagar por su factura es: $' + ttl + ' y tiene un aumento de $' + desc);
+}else{
+    alert('El número ingresado no corresponde a un metodo de pago válido');
+}
+ */
