@@ -66,7 +66,22 @@ document.writeln('El producto sin IVA es: ' + psi + '<br>');
 document.writeln('El total a pagar es: ' + total + '<br>'); */
 
 
-/* 6.	Calcule el porcentaje de alumnos y alumnas de un salón de clase, digitando el total de alumnos hombres y mujeres. */
+/* 6.	Calcule el porcentaje de alumnos y alumnas de un salón de clase, 
+digitando el total de alumnos hombres y mujeres. */
+
+var th = prompt('Ingrese el total de hombres');
+var tm = prompt('Ingrese el total de mujeres');
+
+var sm = parseInt(th) + parseInt(tm);
+
+var ph = (th/sm)*100;
+var pm = (tm/sm)*100;
+
+document.writeln('EL porcentaje total de hombres es ' + ph + '<br>');
+document.writeln('EL porcentaje total de mujeres es ' + pm + '<br>');
+
+
+
 
 
 /* var edad = prompt('Ingrese la edad: ')
@@ -77,7 +92,7 @@ switch(true){
     break;
 } */
 
-var  dia = prompt('Ingrese un numero: ');
+/* var  dia = prompt('Ingrese un numero: ');
 switch( parseInt (dia)){
     case 1: alert('lunes');
     break;
@@ -85,4 +100,4 @@ switch( parseInt (dia)){
     default: alert('EL numero ingresado no existe');
     break;
 
-}
+} */
