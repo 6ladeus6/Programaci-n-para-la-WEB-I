@@ -75,21 +75,95 @@ var tm = prompt('Ingrese el total de alumnos mujeres');
 
 
 
+/* var th = prompt('Ingrese el total de hombres');
+var tm = prompt('Ingrese el total de mujeres');
 
-/* var edad = prompt('Ingrese la edad: ')
-switch(true){
-    case edad < 18 : alert('Usted es menor');
-    break;
-    default: alert('Adulto mayor');
-    break;
-} */
+var sm = parseInt(th) + parseInt(tm);
+
+var ph = (th/sm)*100;
+var pm = (tm/sm)*100;
+
+document.writeln('EL porcentaje total de hombres es ' + ph + '<br>');
+document.writeln('EL porcentaje total de mujeres es ' + pm + '<br>'); */
+
+
+/* 7.	Calcule el promedio de 5 notas de un alumno, el rango de cada nota es del 1 al 5. */
+
+/* var n1 = prompt('Digite n1');
+var n2 = prompt('Digite n2');
+var n3 = prompt('Digite n3');
+var n4 = prompt('Digite n4');
+var n5 = prompt('Digite n5');
+
+var sm = (parseInt(n1) + parseInt(n2) + parseInt(n3) + parseInt(n4) + parseInt(n5) )/5;
+
+document.writeln('EL promedio del estudiante es ' + sm + '<br>');
+ */
+
+/* 8.	Pide al usuario un número y determina si es par o impar y si es positivo o negativo.
+ */
+/* 
+var n = prompt('Digite un número');
+ if((n%2==0)&&(n>=0)){
+    document.writeln('El número es par ' + n + ' y positivo <br>');
+ }else if((n%2==0)&&(n<0)){
+    document.writeln('El número es par ' + n + ' y negativo <br>');
+ }else if ((n%2!=0)&&(n>=0)){
+    document.writeln('El número es impar ' + n + ' y positivo <br>');
+ }else {
+    document.writeln('El número es impar ' + n + ' y negativo <br>');
+ } 
+ */
+
+/*  9.	Pide al usuario dos números y determina cual es el número mayor y cual es el menor. */
+
+/* var n1 = prompt('Digite un número 1');
+var n2 = prompt('Digite un número 2');
+if(n1>n2){
+    document.writeln('El número mayor es: ' + n1 + ' con respecto a ' + n2 + '<br>');
+}else if(n2>n1){
+    document.writeln('El número mayor es: ' + n2 + ' con respecto a ' + n1 + '<br>');
+}else{
+    document.writeln('Los números son iguales ' + n2 + '<br>');
+}
+ */
 
 /* var  dia = prompt('Ingrese un numero: ');
 switch( parseInt (dia)){
     case 1: alert('lunes');
     break;
     case 2: alert('Martes');
+    break;
+    case 3: alert('Miercoles');
+    break;
+    case 4: alert('Jueves');
+    break;
+    case 5: alert('Viernes');
+    break;
+    case 6: alert('Sabado');
+    break;
+    case 7: alert('Domingo');
+    break;
     default: alert('EL numero ingresado no existe');
+    break;
+} */
+
+/* 11.	Se necesita clasificar la etapa de una persona solo pidiéndole como dato su edad. 
+(Si la edad es menor de 18 es adolente), 
+(si la edad está en el rango de 18 a 28 es adulto adolecente), 
+(si la edad está entre 29 a 49 es adulto),
+ (si la edad está entre 50 en adelante es adulto mayor). 
+Mostrar en pantalla la etapa de la persona. */
+
+/* var edad = prompt('Ingrese la edad: ')
+switch(true){
+    case edad < 18 : alert('Usted es adolecente');
+    break;
+    case edad >= 18 && edad <= 28: alert('Usted es adulto adolecente');
+    break;
+    case edad > 28 && edad <= 49: alert('Usted es adulto');
+    break
+    default: alert('Adulto mayor');
     break;
 
 } */
