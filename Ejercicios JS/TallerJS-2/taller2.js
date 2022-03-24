@@ -72,9 +72,19 @@ for (let i = 1; i <= 30; i++) {
  */
 
 /* 7.	Cree un ciclo que cuente del 1 al 30 en intervalos el número ingresado, de manera regresiva. */
+
 var n = prompt('Ingrese un numero');
-var cont = 0;
-for (let i = 1; i <= 30; i++) {
-    cont = cont + parseInt(n);
-    document.writeln('El conteo con intervalos de '+ n + ' es = ' + cont +'<br>');
+//document.writeln('La tabla del ' + n + ' es: ' +'<br>');
+var i = 30;
+var mult = 0;
+while ( i != -1) {
+    n = i - n ;
+    document.writeln(n + ' X '+ i + ' = ' + mult +'<br>');
+    i--;
 }
+/* var n = prompt('Ingrese un numero');
+var cont = 0;
+for (let i = n ; n >= 0; i--) {
+    cont = i - n;
+    document.writeln('El conteo con intervalos de '+ n + ' es = ' + cont +'<br>');
+} */
