@@ -133,3 +133,67 @@ for(i=1;i <= h; i++){
 }
 document.writeln( astk +'<br>');
  */
+
+
+/* Cree un programa que permite registrar el número de compras que se venden cada día. 
+pedir al usuario cuantos productos va a comprar y registrar el precio unitario, 
+calcular el valor total de cada compra y al finalizar el día calcular cuántas facturas se hicieron y el total general.
+Cliente #1
+No. Productos: 3
+valor  p1 : 4,500
+valor p2: 2,000
+valor p3: 3,500
+total compra: 10.000
+Cliente #2
+No. Productos: 2
+valor  p1 : 1,500
+valor p2: 2,000
+total compra: 3.500
+Total Ventas del dia: 2
+Total General del dia: 13.500
+ */
+
+/* var compra = prompt('Cuantos productos desea comprar?');
+var con = 0;
+var totalcompra = 0;
+var totalventas = 0;
+while(compra != 'no'){
+    var con2 = 1;
+    var totalpro = 0;
+    document.writeln('<p> factura '+con+'</p>');
+    document.writeln('<p> número de productos '+compra+'</p>');
+    while(con2 < parseInt(compra)){
+        var valorpro = prompt('Digite el valor del producto');
+        document.writeln('<p> el valor del producto '+con2+' es: '+valorpro+'</p>');
+        totalpro + parseInt(valorpro);
+        con2++;
+    }
+    totalcompra = totalcompra + parseInt(totalpro);
+    totalventas = totalventas + parseInt (totalcompra);
+    document.writeln('<p> Total compra '+totalcompra+'</p>');
+    compra = prompt('Cuantos productos desea comprar?');
+    con++;
+}
+document.writeln('<p> Numero de ventas '+con+'</p>');
+document.writeln('<p> Total ventas '+totalventas+'</p>');
+
+ */
+
+/* 10. Cree tabla de números del 1 al 15 mínimo en HTML. la salida se debe ver así: */
+/* var f = 3;
+var c = 5;
+var con = 1;
+var acu = 1;
+document.write('<table border = "1">')
+while (con <= f) {
+    document.write('<tr>');
+    var con1 = 1;
+    while (con1 <= c) {
+        document.write('<td>' + (acu++) +'</td>')
+        con1++;
+    }
+    document.write('<tr>');
+    con++;
+}
+document.write('</table>')
+ */
