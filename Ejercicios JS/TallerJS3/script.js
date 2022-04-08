@@ -82,9 +82,10 @@ operaciones(a,b); */
 ●	Si la Temperatura es entre de 16°C a 25°C  o 51°F a 77°F : Está templado el dia
 ●	Si la Temperatura es más de 38°C  o 100°F : Tiene fiebre o es el apocalipsis. */
 
-  /* var temp = prompt("Ingrese la Temperatura en °C: ");
+  var temp = prompt("Ingrese la Temperatura en °C: ");
    function conTemp(temp){
     var f = 1.8 * temp + 32;
+    document.writeln(f);
     if((temp < 0)||(f < 32)){
         document.writeln("Nos Cogelamos!!");
     }else if(((temp >= 5)&&(temp <= 15))||((f >= 37)&&(f <= 50))) {
@@ -95,7 +96,7 @@ operaciones(a,b); */
         document.writeln(" Tiene fiebre o es el apocalipsis");
     }
    } 
-   conTemp(temp); */
+   conTemp(temp);
 /* 
    8.	Calcule el índice de masa muscular de una persona (IMC=peso/estatura x altura), pidiendo como datos su estatura y peso. 
    imprima en pantalla lo siguiente: 
@@ -108,7 +109,7 @@ operaciones(a,b); */
 /* var h = prompt("Ingrese su altura: ");
 var m = prompt("Ingrese su masa");
 function indiceMasaCorporal(h,m){
-    var imc = m/h;
+    var imc = m/h*h;
     if(imc < 18.5){
         document.writeln("Bajo peso debe ir al nutricionista");
     }else if ((imc >= 18.5)&&(imc <= 24.9)){
@@ -154,7 +155,7 @@ var totalfinal = iv + totalp;
     document.writeln("El total del valor del producto es: " + totalfinal);
 }
 
-iva(totalp); */
+iva(totalp);  */
 
 /* 11.	 Cree una función que pida la fecha actual y por medio de otra
  función calcule cuántos días y semanas faltan para terminar el año */
@@ -175,7 +176,7 @@ iva(totalp); */
 /*  12.	Cree un listado de compras, con función que pida el número de productos, 
  nombre y valor del producto por medio de otra función imprima la información digitadas. */
 
- function registrarProducto(){
+/* function registrarProducto(){
      var acu = 0;
     var n = prompt("¿Cuantos productos desea registrar?");
      for (let index = 0; index < n; index++) {
@@ -191,5 +192,5 @@ iva(totalp); */
     document.writeln("LA LISTA DE SU PEDIDO ES: " + "<br>");
      registrarProducto();
  }
- listarProductos();
+ listarProductos(); */
  
