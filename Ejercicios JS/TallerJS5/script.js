@@ -254,4 +254,29 @@ vec2.reverse();
 
 /*  16.	Del siguiente arreglo [2,4,6,8,10,12,14,16,18,20,22]
   mostrar en html los elementos ordenados aleatoriamente. */
+/*   let vec = [2,4,6,8,10,12,14,16,18,20,22];
+  document.write('Vector aleatorio:' + vec.sort(function() { return Math.random() - 0.5 }) + '<br>');
 
+  */
+/*   17.	 arreglo 1: [3,5,9,10,35,42,12,22,25], arreglo 2: [9,5,33,12,7,20,22,3,8] de los anteriores arreglos mostrar en forma 
+  de (tabla de multiplicar) la suma de los elementos del arraglo 1 con los elementos del arreglo 
+  2 tambien sumar el total de cada arreglo. */
+
+ /*  let v1  = [3,5,9,10,35,42,12,22,25];
+  let v2 =  [9,5,33,12,7,20,22,3,8];
+  let contv1 = 1;
+  let contv2 = 1;
+  var sumv1 = 0;
+  var sumv2  = 0;
+  var element = 0;
+  for (let index = 0; index < v1.length; index++) {
+    element = v1[index] + v2[index];
+    document.write(v1[index] + ' + ' + v2 [index] + ' = ' + element +'<br>');
+    sumv1 = sumv1 + v1[index];
+    contv1++;
+    sumv2 = sumv2 + v2[index];
+    contv2++;
+  }
+  document.write(sumv1 + ' + ' + sumv2 + ' = ' + (sumv1 + sumv2) +'<br>');
+console.log(sumv1);
+   */
