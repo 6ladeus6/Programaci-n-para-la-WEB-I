@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h2>my name is Donald</h2>
+        <p>I live in Duckburg</p>
+    </div>
+
+
+    <script>
+        
+        let h1= document.createElement("h1");
+        let texto= document.createTextNode("My presentation");
+        h1.appendChild(texto);
+        let divisor= document.querySelector("div");
+        let padre= divisor.parentNode;
+        padre.insertBefore(h1,divisor);
+        let pnuevo = document.createElement("p");
+        let tex = document.createTextNode("mybest friend is mickey");
+        pnuevo.appendChild(tex);
+        let parrafo = document.querySelector("p");
+        divisor.insertBefore(pnuevo, parrafo.nextSibling);
+
+    //Ejercicio 3
+
+    h1.style.color="blue";
+    pnuevo.style.fontWeight="bold";
+    pnuevo.style.backgroundColor="red";
+
+
+        
+    </script>
+</body>
+</html>

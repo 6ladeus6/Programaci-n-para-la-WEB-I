@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+   
+    <div>
+        <h2>my name is Donald</h2>
+        <p>I live in Duckburg</p>
+    </div>
+
+
+    <script>
+        
+        let h1= document.createElement("h1");
+        let texto= document.createTextNode("My presentation");
+        h1.appendChild(texto);
+        let divisor= document.querySelector("div");
+        let padre= divisor.parentNode;
+        padre.insertBefore(h1,divisor);
+
+        
+    </script>
+</body>
+</html>

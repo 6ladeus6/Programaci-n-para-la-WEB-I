@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    <style>
+        .claseH2{
+            color: brown;
+            font-style:italic ;
+        }
+        .cumplido{
+            background-color: green;
+
+        }
+        .fallido{
+            background-color: red;
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <h2 class="claseH2">Listado de que hacerse</h2>
+
+    <ol>
+        <li class="cumplido">Desayunar</li>
+        <li class="fallido">Ir al banco</li>
+        <li>Hacer el mercado</li>
+        <li class="cumplido">Preparar almuerzo</li>
+    </ol>
+
+    <script>
+        let lista = document.querySelector("ol");
+        let ulNuevo = document.createElement("ul");
+        ulNuevo.innerHTML = lista.innerHTML;
+        let padre= lista.parentNode;
+        padre.insertBefore(ulNuevo, lista);
+        padre.removeChild(lista);
+        ulNuevo.setAttribute("class", "nuevo");
+
+
+        //Ejercicio #6
+        let items = document.querySelectorAll("ul li");
+        
+        let almuerzo =  items [ items.length-1 ];
+        let linuevo = document.createElement("li");
+        linuevo.setAttribute("class", "fallido");
+        let tex = document.createTextNode("Recoger a los niños");
+        linuevo.appendChild(tex);
+        ulNuevo.insertBefore(linuevo, almuerzo.nextSibling);
+    
+
+        //console.log(ulNuevo.childNodes);
+        //ulNuevo.removeChild(ulNuevo.lastChild);
+        //ulNuevo.removeChild(ulNuevo.lastChild);
+    
+
+    </script>
+
+</body>
+</html>

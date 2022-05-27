@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div>
+        <h2>my name is Donald</h2>
+        <p>I live in Duckburg</p>
+
+    </div>
+
+
+    <script>
+
+        let pnuevo = document.createElement("p");
+        let tex = document.createTextNode("mybest friend is mickey");
+        pnuevo.appendChild(tex);
+
+        let parrafo = document.querySelector("p");
+        let paDiv = parrafo.parentNode;
+        paDiv.insertBefore(pnuevo, parrafo.nextSibling);
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    <style>
+        .claseH2{
+            color: brown;
+            font-style:italic ;
+        }
+
+    </style>
+</head>
+<body>
+    <h2 class="claseH2">Listado de que hacerse</h2>
+
+    <ol>
+        <li>Desayunar</li>
+        <li>Ir al banco</li>
+        <li>Hacer el mercado</li>
+        <li>Preparar almuerzo</li>
+    </ol>
+
+    <script>
+        let lista = document.querySelector("ol");
+        let ulNuevo = document.createElement("ul");
+        ulNuevo.innerHTML = lista.innerHTML;
+        let padre= lista.parentNode;
+        padre.insertBefore(ulNuevo, lista);
+        padre.removeChild(lista);
+        ulNuevo.setAttribute("class", "nuevo");
+
+
+        //Ejercicio #5
+        let items = document.querySelectorAll("ul li");
+        console.log(items);
+        ulNuevo.removeChild( items [ items.length-1 ] );
+    
+
+        //console.log(ulNuevo.childNodes);
+        //ulNuevo.removeChild(ulNuevo.lastChild);
+        //ulNuevo.removeChild(ulNuevo.lastChild);
+    
+
+    </script>
+
+</body>
+</html>
